@@ -1,0 +1,12 @@
+environment          = "dev"
+region               = "us-west-2"
+vpc_cidr             = "10.0.0.0/16"
+public_subnets       = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
+private_subnets      = ["10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]
+db_instance_class    = "db.t3.micro"
+db_allocated_storage = 20
+s3_bucket_name       = "my-dev-terraform-state-bucket"
+dynamodb_table_name  = "my-dev-terraform-lock-table"
+s3_bucket_prefix     = "dev"
+ami_id               = "ami-0c55b159cbfafe1f0"  # Amazon Linux 2 AMI ID for us-west-2
+instance_type        = "t3.micro"  # A general-purpose instance type
