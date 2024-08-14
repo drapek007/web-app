@@ -27,10 +27,7 @@ resource "aws_s3_bucket" "terraform_state" {
     }
   }
 
-  tags = {
-    Name        = "terraform-state-bucket"
-    Environment = "dev"
-  }
+
 }
 
 # DynamoDB Table for Terraform State Locking
